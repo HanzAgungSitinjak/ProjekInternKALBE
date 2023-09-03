@@ -5,10 +5,7 @@ CREATE TABLE Tanggal_Pengiriman (
     Tahun INT,
     Kuartal INT,
     Bulan INT,
-    Hari INT,
-    -- Informasi tambahan tentang tanggal
-    Hari_Libur BIT,
-    Akhir_Pekan BIT
+    Hari INT
 );
 
 -- Tabel Dimensi Produk
@@ -16,10 +13,7 @@ CREATE TABLE Product_Dim (
     ID_Produk INT PRIMARY KEY,
     Nama_Produk VARCHAR(255),
     Kategori VARCHAR(50),
-    Merek VARCHAR(50),
-    -- Informasi tambahan tentang produk
-    SKU VARCHAR(50),
-    Produsen VARCHAR(100)
+    Merek VARCHAR(50)
 );
 
 -- Tabel Dimensi Pelanggan
@@ -27,10 +21,7 @@ CREATE TABLE Customer_Dim (
     ID_Pelanggan INT PRIMARY KEY,
     Nama_Pelanggan VARCHAR(255),
     Alamat VARCHAR(255),
-    Nomor_Telepon VARCHAR(20),
-    -- Informasi tambahan tentang pelanggan
-    Email VARCHAR(100),
-    Status_Loyalitas VARCHAR(50)
+    Nomor_Telepon VARCHAR(20)
 );
 
 -- Tabel Dimensi Toko
@@ -38,20 +29,14 @@ CREATE TABLE Store_Dim (
     ID_Toko INT PRIMARY KEY,
     Nama_Toko VARCHAR(255),
     Lokasi VARCHAR(255),
-    Manajer VARCHAR(100),
-    -- Informasi tambahan tentang toko
-    Jenis_Toko VARCHAR(50),
-    Ukuran_Toko INT
+    Manajer VARCHAR(100)
 );
 
 -- Tabel Dimensi Karyawan
 CREATE TABLE Employee_Dim (
     ID_Karyawan INT PRIMARY KEY,
     Nama_Karyawan VARCHAR(255),
-    Posisi VARCHAR(100),
-    -- Informasi tambahan tentang karyawan
-    Tanggal_Masuk DATE,
-    Rincian_Kontak VARCHAR(255)
+    Posisi VARCHAR(100)
 );
 
 -- Tabel Fakta Penjualan
