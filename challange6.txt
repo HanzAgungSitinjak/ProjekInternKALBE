@@ -1,0 +1,14 @@
+challange 6:
+1. Implementasi penambahan ID sebagai kunci unik dalam basis data untuk 
+   mengidentifikasi data secara eksklusif.
+2. Pembuatan aturan penting dalam pengembangan kasus guna mencegah 
+   duplikasi data yang dapat mengakibatkan redundansi.
+3. Disarankan untuk menghindari penggunaan nilai null dalam aturan input 
+   data, terutama pada kolom ddPlant, ddlReqBU, dan ddlReqLOB yang 
+   merupakan pengenal data.
+4. Jika ddlReqBU berfungsi sebagai kunci utama, kode harus unik dan tidak
+   boleh berulang, mungkin berupa kombinasi angka dan huruf yang 
+   tidak sama.
+
+
+
